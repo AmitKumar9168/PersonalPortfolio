@@ -365,7 +365,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 /* =========================================================
    Work / project cards
    ========================================================= */
-.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:36px;margin-bottom:20px;}
+.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:36px;margin-bottom:40px;}
 .work-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;}
 .work-card.is-placeholder{display:flex;align-items:center;justify-content:center;border-style:dashed;min-height:220px;}
 .work-card.is-placeholder span{color:var(--text-low);font-family:var(--font-mono);font-size:0.82rem;text-align:center;padding:24px;}
