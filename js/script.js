@@ -373,6 +373,7 @@
   var hopDetail = document.getElementById('hopDetail');
 
   function renderHop(index) {
+    if (!hopDetail) return;
     var d = hopData[index];
     hopDetail.innerHTML =
       '<div>' +
