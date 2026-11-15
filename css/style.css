@@ -79,7 +79,7 @@ a{color:inherit;text-decoration:none;}
 ul{list-style:none;margin:0;padding:0;}
 button{font-family:inherit;}
 img{max-width:100%;display:block;}
-section{position:relative;padding:110px 24px;}
+section{position:relative;padding:50px 24px;}
 section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 .gradient-text{
   background:linear-gradient(90deg,var(--indigo) 0%, var(--violet) 55%, var(--coral) 100%);
@@ -331,7 +331,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 /* =========================================================
    Impact / achievement stats
    ========================================================= */
-.impact{overflow:hidden;padding-top:0;padding-bottom:0;}
+.impact{overflow:hidden;padding-top:0;padding-bottom:110px;}
 .marquee-bg{overflow:hidden;white-space:nowrap;padding:14px 0;opacity:.5;}
 .marquee-track{display:inline-flex;font-family:var(--font-head);font-weight:700;font-size:3.2rem;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.25);animation:marquee 26s linear infinite;}
 .marquee-bg.alt .marquee-track{-webkit-text-stroke:1px rgba(157,92,255,0.35);font-family:var(--font-mono);font-size:1.1rem;animation-duration:22s;}
@@ -365,7 +365,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 /* =========================================================
    Work / project cards
    ========================================================= */
-.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:36px;}
+.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:36px;margin-bottom:20px;}
 .work-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;}
 .work-card.is-placeholder{display:flex;align-items:center;justify-content:center;border-style:dashed;min-height:220px;}
 .work-card.is-placeholder span{color:var(--text-low);font-family:var(--font-mono);font-size:0.82rem;text-align:center;padding:24px;}
@@ -471,7 +471,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 }
 .contact-links a:hover{border-color:var(--accent2);color:var(--accent2);}
 .contact-gate-msg{
-  font-family:var(--font-mono);font-size:0.78rem;color:var(--accent2);
+  font-family:var(--font-mono);font-size:0.78rem;color:rgb(230, 0, 0);
   margin:-20px 0 32px;min-height:1.2em;
 }
 .token-game.is-highlight{animation:token-pulse 1.1s ease;}
@@ -526,6 +526,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
 }
 @media (max-width:720px){
   section{padding:64px 18px;}
+  .impact{padding-top:0;padding-bottom:64px;}
   .nav-links{
     position:absolute;top:calc(100% + 10px);left:0;right:0;
     background:#060608;border:1px solid rgba(255,255,255,0.14);
@@ -566,6 +567,7 @@ section > *{max-width:var(--maxw);margin-left:auto;margin-right:auto;}
   .token-code{font-size:1.6rem;padding:16px;}
   .hero-chips{gap:8px;}
   section{padding:52px 16px;}
+  .impact{padding-top:0;padding-bottom:52px;}
   .cert-card{padding:28px 20px;}
 }
 
