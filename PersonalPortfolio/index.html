@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amit Kumar — IAM Engineer · Ping Identity Specialist</title>
+<meta name="description" content="Amit Kumar (Amit Das) — Identity and Access Management engineer specializing in Ping Identity: PingAM, PingIDM, PingDS, and Ping Advanced Identity Cloud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="site-header">
+  <nav class="navbar" aria-label="Main Navigation">
+    <a href="#hero" class="brand">
+      <span class="brand-mark">AK</span>
+      <span class="brand-name">AMIT KUMAR</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Contact Me</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HERO (dark) ===================== -->
+  <section class="hero section-dark" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-decode="IDENTITY &amp; ACCESS MANAGEMENT · PING IDENTITY SPECIALIST">
+          <span class="dot"></span>IDENTITY &amp; ACCESS MANAGEMENT · PING IDENTITY SPECIALIST
+        </p>
+        <h1 class="hero-title">
+          <span class="line">Engineering Trust Into</span>
+          <span class="line gradient-text">Every Login.</span>
+        </h1>
+        <span class="hero-name">Amit Kumar (Amit Das) — IAM Engineer</span>
+        <p class="hero-sub">
+          Identity and Access Management professional with 3.5+ years of hands-on experience across
+          Ping Identity Access Management (PingAM), Identity Management (PingIDM), and Directory
+          Services (PingDS) — designing, customizing, and troubleshooting enterprise authentication
+          journeys.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip">3.5+ YEARS</span>
+          <span class="chip">100+ AUTH JOURNEYS</span>
+          <span class="chip">10+ CUSTOM APIs</span>
+          <span class="chip">PING AIC CERTIFIED</span>
+        </div>
+      </div>
+
+      <aside class="token-panel" aria-label="Live one-time passcode demo">
+        <div class="token-panel-head">
+          <span class="token-label">ONE-TIME PASSCODE · LIVE DEMO</span>
+          <span class="live-pill"><span class="live-dot"></span>LIVE</span>
+        </div>
+        <div class="token-code" id="heroToken">
+          <span class="token-half">000</span><span class="token-sep"> </span><span class="token-half">000</span>
+        </div>
+        <div class="token-progress"><div class="token-progress-bar" id="heroProgress"></div></div>
+        <p class="token-caption">
+          A new one-time code every 60 seconds — the same step-up authentication pattern I build
+          into Ping Identity authentication journeys.
+        </p>
+        <dl class="token-stats">
+          <div><dt>PRIMARY STACK</dt><dd>PingAM · PingIDM · PingDS</dd></div>
+          <div><dt>SPECIALIZATION</dt><dd>Authentication Journeys &amp; Custom Nodes</dd></div>
+          <div><dt>PROTOCOLS</dt><dd>OAuth 2.0 · OIDC · SAML 2.0</dd></div>
+        </dl>
+        <div class="mini-terminal" data-decode="VALIDATING STEP-UP AUTHENTICATION · OIDC">
+          VALIDATING STEP-UP AUTHENTICATION · OIDC
+        </div>
+      </aside>
+    </div>
+    <p class="scroll-hint">SCROLL TO EXPLORE</p>
+
+    <div class="proof-strip" aria-label="Core highlights">
+      <div class="proof-inner">
+        <span class="proof-label">CORE HIGHLIGHTS</span>
+        <div class="proof-stats">
+          <div><strong>3.5+</strong><span>YEARS EXPERIENCE</span></div>
+          <div><strong>100+</strong><span>AUTH JOURNEYS DESIGNED</span></div>
+          <div><strong>10+</strong><span>CUSTOM REST APIs</span></div>
+          <div><strong>3</strong><span>INDUSTRY CERTIFICATIONS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEED TICKER ===================== -->
+  <div class="feed-ticker" aria-hidden="true">
+    <span class="feed-ticker-label">PINGAM AUDIT LOG · SAMPLE ·</span>
+    <div class="feed-ticker-viewport">
+      <div class="feed-ticker-track" id="feedTrack"></div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ME (light) ===================== -->
+  <section class="about section-light" id="about">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="ABOUT ME"><span class="dot"></span>ABOUT ME</p>
+      <h2>Identity Is The Problem I <span class="gradient-text">Enjoy Solving.</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I am an Identity and Access Management (IAM) professional with 3.5+ years of hands-on
+          experience working with Ping Identity technologies and enterprise identity management
+          solutions.</p>
+        <p>My expertise is centered on Ping Identity Access Management (PingAM), Identity
+          Management (PingIDM), and Directory Services (PingDS). I design, develop, customize,
+          implement, and troubleshoot authentication and identity management solutions —
+          turning a login screen into a reliable, secure journey every time.</p>
+        <p>Beyond the core platforms, I work regularly with custom authentication nodes,
+          scripting, and API integrations, and I bring a practical understanding of IAM
+          architecture, identity lifecycle management, authentication, authorization, and
+          directory services — including cloud-based IAM with Ping Advanced Identity Cloud.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <strong>3.5+ Years</strong>
+          <span>FOCUSED ON PING IDENTITY &amp; ENTERPRISE IAM</span>
+        </div>
+        <div class="highlight-card">
+          <strong>PingAM · PingIDM · PingDS</strong>
+          <span>CORE TECHNICAL SPECIALIZATION</span>
+        </div>
+        <div class="highlight-card">
+          <strong>Ping AIC</strong>
+          <span>CLOUD IAM &amp; CERTIFIED EXPERTISE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECHNICAL EXPERTISE (dark) ===================== -->
+  <section class="expertise section-dark" id="expertise">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="TECHNICAL EXPERTISE"><span class="dot"></span>TECHNICAL EXPERTISE</p>
+      <h2>Built On The <span class="gradient-text">Ping Identity Stack.</span></h2>
+      <p class="section-sub">Four platforms I work in hands-on, every day — from authentication
+        trees to directory services to cloud identity.</p>
+    </div>
+    <div class="terrain-grid">
+
+      <article class="terrain-card">
+        <div class="card-corner tl"></div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5l8-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>PingAM (ForgeRock AM)</h3>
+        <p class="tech-line">Authentication Trees · Custom Nodes · SSO · MFA · Policy Engine</p>
+        <p>Design and customize authentication journeys, build custom authentication nodes, and
+          configure SSO and step-up authentication (MFA) for enterprise applications.</p>
+        <span class="card-foot">CORE SPECIALIZATION</span>
+        <div class="card-corner br"></div>
+      </article>
+
+      <article class="terrain-card">
+        <div class="card-corner tl"></div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.8 3.1-6.5 7-6.5s7 2.7 7 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>PingIDM</h3>
+        <p class="tech-line">Identity Lifecycle · Provisioning · Reconciliation · Workflows</p>
+        <p>Manage identity lifecycle processes — provisioning, synchronization, and
+          reconciliation — that keep identity data consistent across connected systems.</p>
+        <span class="card-foot">HANDS-ON EXPERIENCE</span>
+        <div class="card-corner br"></div>
+      </article>
+
+      <article class="terrain-card">
+        <div class="card-corner tl"></div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="18" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>PingDS</h3>
+        <p class="tech-line">Directory Services · LDAP · Replication · Schema Design</p>
+        <p>Work with directory services as the backbone of identity data — supporting
+          authentication, authorization, and lookups at enterprise scale.</p>
+        <span class="card-foot">HANDS-ON EXPERIENCE</span>
+        <div class="card-corner br"></div>
+      </article>
+
+      <article class="terrain-card">
+        <div class="card-corner tl"></div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 17a4.5 4.5 0 01-1-8.9A5 5 0 0115.9 7 4 4 0 0117 15h-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Ping Advanced Identity Cloud</h3>
+        <p class="tech-line">Cloud IAM · Custom REST Endpoints · Scripting · Certified</p>
+        <p>Build and extend cloud-based IAM solutions in Ping AIC, including 10+ custom REST API
+          endpoints that extend platform capability for specific business needs.</p>
+        <span class="card-foot">CERTIFIED · PING AIC</span>
+        <div class="card-corner br"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROFESSIONAL EXPERIENCE (light) ===================== -->
+  <section class="experience section-light" id="experience">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="PROFESSIONAL EXPERIENCE"><span class="dot"></span>PROFESSIONAL EXPERIENCE</p>
+      <h2>Where The <span class="gradient-text">Work Happens.</span></h2>
+      <p class="section-sub">3.5+ years deep in Ping Identity — here's what that's looked like
+        day to day.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-role">IAM ENGINEER / PING IDENTITY SPECIALIST</span>
+        <h3>[Company Name]</h3>
+        <span class="timeline-company">[Start Year] – Present · [City, Country]</span>
+        <ul>
+          <li>Designed and developed 100+ authentication journeys using Ping Identity, covering
+            SSO, MFA, and custom step-up flows.</li>
+          <li>Developed 10+ custom REST API endpoints in Ping Identity Advanced Identity Cloud
+            (Ping AIC) to extend platform functionality.</li>
+          <li>Hands-on work with PingAM (ForgeRock AM), PingIDM, and PingDS across design,
+            implementation, and troubleshooting.</li>
+          <li>Built custom authentication nodes using scripting (JavaScript / Groovy) and
+            integrated them with internal and third-party APIs.</li>
+          <li>Applied practical knowledge of IAM architecture, identity lifecycle management,
+            authentication, authorization, and directory services.</li>
+          <li>Worked with cloud-based IAM solutions, particularly Ping Advanced Identity Cloud,
+            for scalable enterprise deployments.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS & ACHIEVEMENTS (dark) ===================== -->
+  <section class="impact section-dark" id="projects">
+    <div class="marquee-bg" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AUTHENTICATION TREES · CUSTOM NODES · CIAM · SSO · </span>
+        <span>AUTHENTICATION TREES · CUSTOM NODES · CIAM · SSO · </span>
+      </div>
+    </div>
+
+    <div class="impact-inner">
+      <div class="impact-copy">
+        <p class="eyebrow" data-decode="PROJECTS &amp; ACHIEVEMENTS"><span class="dot"></span>PROJECTS &amp; ACHIEVEMENTS</p>
+        <h2>Built, Shipped, <span class="gradient-text">Repeatedly.</span></h2>
+        <p class="section-sub">Real numbers from real work with the Ping Identity platform.</p>
+        <div class="impact-stats">
+          <div><strong>100+</strong><span>authentication journeys designed</span></div>
+          <div><strong>10+</strong><span>custom REST API endpoints (Ping AIC)</span></div>
+          <div><strong>3.5+</strong><span>years with Ping Identity technologies</span></div>
+          <div><strong>3</strong><span>industry certifications earned</span></div>
+        </div>
+      </div>
+
+      <div class="impact-panels">
+        <div class="term-window">
+          <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">PINGAM AUDIT LOG · SAMPLE</span></div>
+          <div class="term-body" id="splunkFeed"></div>
+        </div>
+        <div class="term-window hex-window">
+          <span class="sticky-tag tag-2">SAML 2.0</span>
+          <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">SAMPLE OIDC TOKEN · ILLUSTRATIVE</span></div>
+          <div class="term-body hex-body" id="hexDump"></div>
+        </div>
+        <div class="term-window">
+          <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">AUTH SUCCESS RATE · SAMPLE DATA</span></div>
+          <div class="bars" id="barChart"></div>
+        </div>
+        <span class="sticky-tag tag-1">OIDC</span>
+        <span class="sticky-tag tag-3">MFA ✓</span>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:12px;">
+      <h2 style="font-size:clamp(1.6rem,3vw,2.1rem);">How An Authentication Journey <span class="gradient-text">Flows.</span></h2>
+      <p class="section-sub">A simplified walk-through of a journey I'd build in PingAM — pick a
+        step to inspect it.</p>
+    </div>
+
+    <div class="hops-rail" role="tablist" aria-label="Authentication journey steps" id="hopsRail">
+      <button class="hop-tab is-active" role="tab" aria-selected="true" data-hop="0">
+        <span class="hop-id">STEP 01</span><span class="hop-name">Request</span>
+        <span class="hop-sub">User hits protected app</span>
+      </button>
+      <button class="hop-tab" role="tab" aria-selected="false" data-hop="1">
+        <span class="hop-id">STEP 02</span><span class="hop-name">Auth Tree</span>
+        <span class="hop-sub">PingAM routes the journey</span>
+      </button>
+      <button class="hop-tab" role="tab" aria-selected="false" data-hop="2">
+        <span class="hop-id">STEP 03</span><span class="hop-name">Custom Node</span>
+        <span class="hop-sub">Scripted logic / API call</span>
+      </button>
+      <button class="hop-tab" role="tab" aria-selected="false" data-hop="3">
+        <span class="hop-id">STEP 04</span><span class="hop-name">Step-Up MFA</span>
+        <span class="hop-sub">Policy-driven challenge</span>
+      </button>
+      <button class="hop-tab" role="tab" aria-selected="false" data-hop="4">
+        <span class="hop-id">STEP 05</span><span class="hop-name">Token Issued</span>
+        <span class="hop-sub">OIDC / SAML federation</span>
+      </button>
+    </div>
+
+    <article class="hop-detail" id="hopDetail">
+      <!-- populated by JS -->
+    </article>
+
+    <div class="work-grid">
+      <article class="work-card">
+        <div class="work-body">
+          <span class="work-meta">PING IDENTITY · AUTHENTICATION JOURNEYS</span>
+          <h3>Authentication Journey Design &amp; Customization</h3>
+          <p>Designed and developed 100+ authentication journeys using Ping Identity, including
+            custom authentication nodes and step-up flows tailored to specific business
+            requirements.</p>
+          <div class="work-tags"><span>PingAM</span><span>Custom Nodes</span><span>SSO / MFA</span></div>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-body">
+          <span class="work-meta">PING ADVANCED IDENTITY CLOUD</span>
+          <h3>Custom REST API Development in Ping AIC</h3>
+          <p>Developed 10+ custom REST API endpoints in Ping Identity Advanced Identity Cloud,
+            extending platform capability and supporting integration with internal systems.</p>
+          <div class="work-tags"><span>Ping AIC</span><span>REST APIs</span><span>Scripting</span></div>
+        </div>
+      </article>
+      <article class="work-card is-placeholder">
+        <span>+ Add another project case study here</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS (light) ===================== -->
+  <section class="certifications section-light" id="certifications">
+    <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <p class="eyebrow center" data-decode="CERTIFICATIONS"><span class="dot"></span>CERTIFICATIONS</p>
+      <h2>Verified <span class="gradient-text">Expertise.</span></h2>
+      <p class="section-sub center">Licenses and certifications earned across identity security
+        platforms.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-badge-slot" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="cert-issuer">SAVIYNT</span>
+        <h3>Saviynt Identity Security</h3>
+        <span class="cert-dates">Issued Feb 2026 · Expires Feb 2028</span>
+        <span class="cert-id">Credential ID 174346267</span>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge-slot" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="cert-issuer">MINIORANGE</span>
+        <h3>IdentityShield Summit '26 Certificate</h3>
+        <span class="cert-dates">Issued Feb 2026</span>
+        <span class="cert-id">Credential ID 109431d786f247f79fec490536cd1ee3</span>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge-slot" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="cert-issuer">PING IDENTITY</span>
+        <h3>Certified Professional — PingOne Advanced Identity Cloud (FRX-IC-CPE)</h3>
+        <span class="cert-dates">Issued Apr 2025 · Expires Apr 2028</span>
+      </div>
+    </div>
+    <p class="cert-note">Add badge or certificate images once available — drop the image files
+      into these cards.</p>
+  </section>
+
+  <!-- ===================== EDUCATION (dark) ===================== -->
+  <section class="education section-dark" id="education">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="EDUCATION"><span class="dot"></span>EDUCATION</p>
+      <h2>Where It <span class="gradient-text">Started.</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <span class="edu-level">DEGREE</span>
+        <h3>Trinity Academy of Engineering</h3>
+        <span class="edu-board">Savitribai Phule Pune University (SPPU)</span>
+        <span class="edu-score">8.0 CGPA</span>
+      </div>
+      <div class="edu-card">
+        <span class="edu-level">DIPLOMA</span>
+        <h3>Trinity Polytechnic, Pune</h3>
+        <span class="edu-board">MSBTE</span>
+        <span class="edu-score">93%</span>
+      </div>
+      <div class="edu-card">
+        <span class="edu-level">HSC · 12TH</span>
+        <h3>Sinhgad Junior College</h3>
+      </div>
+      <div class="edu-card">
+        <span class="edu-level">SSC · 10TH</span>
+        <h3>Abundant Life School, Pune</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECHNICAL SKILLS (dark) ===================== -->
+  <section class="skills section-light" id="skills">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="TECHNICAL SKILLS"><span class="dot"></span>TECHNICAL SKILLS</p>
+      <h2>The Full <span class="gradient-text">Toolkit.</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Identity &amp; Access Management</h3>
+        <div class="skill-tags">
+          <span>IAM</span><span>CIAM</span><span>Authentication</span><span>Authorization</span><span>SSO</span><span>MFA</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Ping Identity Technologies</h3>
+        <div class="skill-tags">
+          <span>PingAM</span><span>PingIDM</span><span>PingDS</span><span>Ping Advanced Identity Cloud</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Development &amp; Customization</h3>
+        <div class="skill-tags">
+          <span>JavaScript</span><span>Groovy</span><span>REST APIs</span><span>Custom Endpoints</span><span>Authentication Journeys</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Protocols</h3>
+        <div class="skill-tags">
+          <span>OAuth 2.0</span><span>OpenID Connect (OIDC)</span><span>SAML 2.0</span><span>LDAP</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Technical Operations</h3>
+        <div class="skill-tags">
+          <span>Troubleshooting</span><span>Log Analysis</span><span>Integrations</span><span>Configuration</span><span>Deployment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG (dark) ===================== -->
+  <section class="blog section-dark" id="blog">
+    <div class="section-head">
+      <p class="eyebrow" data-decode="BLOG"><span class="dot"></span>BLOG</p>
+      <h2>Notes From The <span class="gradient-text">Field.</span></h2>
+      <p class="section-sub">Placeholder posts — swap these for your own writing whenever
+        you're ready.</p>
+    </div>
+    <div class="blog-carousel" id="blogCarousel">
+      <div class="blog-viewport">
+        <div class="blog-track" id="blogTrack">
+          <article class="blog-card">
+            <span class="blog-placeholder-tag">PLACEHOLDER</span>
+            <h3>Designing Resilient Authentication Trees in PingAM</h3>
+            <p>A look at structuring authentication trees so they stay maintainable as journeys grow
+              more complex — placeholder text, replace with your own post.</p>
+            <button type="button" class="blog-link" data-post-title="Designing Resilient Authentication Trees in PingAM" data-post-body="This is placeholder body copy for the full post. Swap it for your own write-up on structuring authentication trees so they stay maintainable as journeys grow more complex — covering node organization, reusable sub-trees, naming conventions, and testing strategy.">Read More →</button>
+          </article>
+          <article class="blog-card">
+            <span class="blog-placeholder-tag">PLACEHOLDER</span>
+            <h3>Custom Nodes 101: Extending PingAM with Groovy &amp; JavaScript</h3>
+            <p>An introduction to writing custom authentication nodes and where scripted logic fits
+              into a journey — placeholder text, replace with your own post.</p>
+            <button type="button" class="blog-link" data-post-title="Custom Nodes 101: Extending PingAM with Groovy &amp; JavaScript" data-post-body="This is placeholder body copy for the full post. Swap it for your own walkthrough of writing custom authentication nodes — the node lifecycle, inputs and outcomes, when to reach for Groovy versus JavaScript, and calling out to external APIs safely.">Read More →</button>
+          </article>
+          <article class="blog-card">
+            <span class="blog-placeholder-tag">PLACEHOLDER</span>
+            <h3>OIDC vs SAML: Choosing The Right Protocol</h3>
+            <p>A practical comparison for picking between OIDC and SAML when federating identity to a
+              new application — placeholder text, replace with your own post.</p>
+            <button type="button" class="blog-link" data-post-title="OIDC vs SAML: Choosing The Right Protocol" data-post-body="This is placeholder body copy for the full post. Swap it for your own comparison of OIDC and SAML — when each protocol fits best, token formats, typical integration pitfalls, and how to decide for a new application.">Read More →</button>
+          </article>
+          <article class="blog-card is-placeholder">
+            <span>+ Add another post here</span>
+          </article>
+        </div>
+      </div>
+      <div class="blog-arrows">
+        <button type="button" class="blog-arrow" id="blogPrev" aria-label="Previous post">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="blog-arrow" id="blogNext" aria-label="Next post">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT (light) ===================== -->
+  <section class="contact section-light" id="contact">
+    <article class="contact-card">
+      <p class="eyebrow center" data-decode="GET IN TOUCH"><span class="dot"></span>GET IN TOUCH</p>
+      <h2>Let's <span class="gradient-text">Connect.</span></h2>
+      <p class="section-sub center">Open to Identity and Access Management / Ping Identity roles.
+        Reach out through any channel below.</p>
+
+      <div class="contact-links" id="contactLinks">
+        <a href="mailto:your.email@example.com" class="gated-link">✉ [your.email@example.com]</a>
+        <a href="#" target="_blank" rel="noopener" class="gated-link">in LinkedIn — [add profile URL]</a>
+        <a href="#" target="_blank" rel="noopener" class="gated-link">⌁ GitHub — [add profile URL]</a>
+      </div>
+      <p class="contact-gate-msg" id="contactGateMsg" aria-live="polite"></p>
+
+      <div class="token-game" id="tokenGame">
+        <span class="token-game-label">JUST FOR FUN — ENTER THE LIVE ONE-TIME CODE</span>
+        <div class="token-code" id="gameToken">
+          <span class="token-half">000</span><span class="token-sep"> </span><span class="token-half">000</span>
+        </div>
+        <div class="token-game-row">
+          <input type="text" id="tokenInput" class="token-input" maxlength="7" placeholder="••• •••" inputmode="numeric" aria-label="Enter the live one-time code">
+          <button class="btn btn-primary" id="authenticateBtn" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><rect x="5" y="11" width="14" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V7a4 4 0 018 0v4" stroke="currentColor" stroke-width="1.6"/></svg>
+            AUTHENTICATE
+          </button>
+        </div>
+        <p class="token-game-hint">TYPE THE 6 DIGITS SHOWN ABOVE · <button type="button" id="skipBtn" class="link-btn">SKIP</button></p>
+        <p class="token-game-result" id="tokenResult" aria-live="polite"></p>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<footer class="site-footer section-dark">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Amit Kumar (Amit Das). IAM Engineer — Ping Identity Specialist.</span>
+    <span>INDIA · OPEN TO IAM / PING IDENTITY ROLES</span>
+  </div>
+  <!-- <p class="footer-note"> </p> -->
+</footer>
+
+<div class="modal-overlay section-dark" id="blogModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+    <button type="button" class="modal-close-top" id="blogModalCloseTop" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <span class="blog-placeholder-tag">PLACEHOLDER</span>
+    <h3 id="blogModalTitle"></h3>
+    <p id="blogModalBody"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-primary modal-close-bottom" id="blogModalCloseBottom">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
