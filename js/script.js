@@ -289,6 +289,14 @@
   /* ---------------------------------------------------------
      Impact section: splunk feed, hex dump, bar chart
   --------------------------------------------------------- */
+  function makeSplunkLineHTML(baseDate) {
+    var result = RESULTS[Math.floor(Math.random() * RESULTS.length)];
+    var node = AUTH_NODES[Math.floor(Math.random() * AUTH_NODES.length)];
+    var ts = pad(baseDate.getHours()) + ':' + pad(baseDate.getMinutes()) + ':' + pad(baseDate.getSeconds());
+    return '<span class="log-ts">' + ts + '</span> <span class="log-accent">' + result + '</span> ' +
+      randomUser() + ' ' + node;
+  }
+
   (function buildSplunkFeed() {
     var el = document.getElementById('splunkFeed');
     if (!el) return;
@@ -296,9 +304,9 @@
     var out = [];
     for (var i = 0; i < 9; i++) {
       now = new Date(now.getTime() + 900);
-      out.push(makeLogLine(now).replace(/ rtt=\d+ms$/, '').replace('user=', '').replace('node=', ''));
+      out.push(makeSplunkLineHTML(now));
     }
-    el.textContent = out.join('\n');
+    el.innerHTML = out.join('\n');
   })();
 
   (function buildTokenSample() {
@@ -314,7 +322,9 @@
       amr: ['pwd', 'otp'],
       acr: 'urn:ping:loa:step-up'
     };
-    el.textContent = JSON.stringify(sample, null, 2);
+    var json = JSON.stringify(sample, null, 2)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    el.innerHTML = json.replace(/"([a-zA-Z0-9_]+)":/g, '<span class="json-key">"$1"</span>:');
   })();
 
   (function buildBarChart() {
